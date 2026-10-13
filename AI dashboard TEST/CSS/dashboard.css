@@ -1,0 +1,206 @@
+ /* Algemene reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background-color: #fff;
+      color: #333;
+    }
+
+    /* Sidebar */
+    .navbar {
+      width: 250px;
+      background-color: #f0f0f0;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .navbar h2 {
+      font-size: 24px;
+      color: #4a4a4a;
+      margin-bottom: 40px;
+    }
+
+    .navbar nav ul {
+      list-style: none;
+    }
+
+    .navbar nav ul li {
+      margin-bottom: 35px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .navbar nav ul li a {
+      text-decoration: none;
+      color: #4a4a4a;
+      font-weight: bold;
+      padding: 10px 15px;
+      display: block;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .navbar nav ul li a:hover,
+    .navbar nav ul li a.active {
+      background-color: #d9d9d9;
+      transform: translateX(5px);
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Footer logo */
+    .navbar .logo {
+      width: 100%;
+      margin-top: 40px;
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid #ccc;
+      font-weight: bold;
+      font-size: 14px;
+      color: #999;
+    }
+
+    /* Main content */
+    main.dashboard {
+      flex-grow: 1;
+      padding: 40px 60px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    /* Header */
+    header h1 {
+      font-size: 28px;
+      color: #4a4a4a;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 16px;
+      color: #666;
+      max-width: 600px;
+    }
+
+    /* Dashboard stat boxes */
+    section.stats {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .stat-box {
+      background-color: #f2f2f2;
+      padding: 20px;
+      width: 180px;
+      height: 140px;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .stat-box:hover {
+      transform: translateY(-3px);
+    }
+
+    .stat-box .icon {
+      width: 40px;
+      height: 40px;
+      background-color: #ccc;
+      margin: 0 auto 10px;
+      border-radius: 4px;
+    }
+
+    .stat-box strong {
+      font-size: 22px;
+      color: #333;
+    }
+
+    .stat-box p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .stat-box button {
+      margin-top: 10px;
+      background-color: #e0e0e0;
+      border: none;
+      border-radius: 4px;
+      padding: 6px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .stat-box button:hover {
+      background-color: #cccccc;
+      transform: scale(1.05);
+    }
+
+    /* Recently edited */
+    .edited {
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .edited h2 {
+      font-size: 18px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    .edited ul {
+      list-style: none;
+      border: 1px solid #d9d9d9;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .edited ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 16px;
+      border-bottom: 1px solid #d9d9d9;
+      background-color: #fafafa;
+    }
+
+    .edited ul li:last-child {
+      border-bottom: none;
+    }
+
+    .edited ul li .icon {
+      width: 20px;
+      height: 20px;
+      background-color: #ccc;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .edited ul li div {
+      flex: 1;
+    }
+
+    .edited ul li strong {
+      font-size: 14px;
+      color: #333;
+      display: block;
+    }
+
+    .edited ul li small {
+      color: #777;
+      font-size: 12px;
+    }
